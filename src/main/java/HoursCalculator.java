@@ -66,7 +66,6 @@ public class HoursCalculator {
             startTime = startTime.withHour(WORK_HOUR_START);
         }
         while (numberOfDays > 0) {
-            System.out.println(numberOfDays);
             if (startTime.getHour() == WORK_HOUR_START) {
                 startTime = startTime.plusHours(8);
                 numberOfDays = numberOfDays - 1;
